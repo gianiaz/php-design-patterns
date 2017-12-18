@@ -9,7 +9,7 @@ function getCode($filename)
     if (file_exists($filename)) {
         $content = file_get_contents($filename);
 
-        return htmlspecialchars($content);
+        return '<h3>'.$filename.'</h3><pre><code class="php">'.htmlspecialchars($content).'</code></pre>';
     }
 
     return 'ERROR finding '.$filename;

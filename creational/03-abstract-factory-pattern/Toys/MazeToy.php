@@ -1,8 +1,12 @@
 <?php
 
+/*
+ * @author Giovanni Battista Lenoci <gianiaz@gmail.com>
+ */
+
 namespace Toys;
 
-class MazeToy
+abstract class MazeToy extends Toy
 {
-
+    private $type = 'Maze';
 }

@@ -5,13 +5,13 @@ require '../../includes/header.inc.php';
 
     <h1>Simple Factory</h1>
 
-    <pre><code class="php"><?php echo getCode('Notifier.php'); ?></code></pre>
-    <pre><code class="php"><?php echo getCode('NotifierFactory.php'); ?></code></pre>
-    <pre><code class="php"><?php echo getCode('Email.php'); ?></code></pre>
-    <pre><code class="php"><?php echo getCode('SMS.php'); ?></code></pre>
+    <?php echo getCode('Notifier.php'); ?>
+    <?php echo getCode('NotifierFactory.php'); ?>
+    <?php echo getCode('Email.php'); ?>
+    <?php echo getCode('SMS.php'); ?>
 
     <h3>Codice Eseguito</h3>
-    <pre><code class="php"><?php echo getCode('code.php'); ?></code></pre>
+    <?php echo getCode('code.php'); ?>
 
     <h3>Risultato</h3>
 

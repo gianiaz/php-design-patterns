@@ -8,8 +8,7 @@ class Post extends Notifier
 {
     public function validateTo(): bool
     {
-        $address = explode(',', $this->to);
-        if (2 !== substr_count($address, ', ') + 1) {
+        if (2 !== substr_count($this->to, ',') + 1) {
             return false;
         }
 
@@ -21,5 +20,8 @@ class Post extends Notifier
         if (false === $this->validateTo()) {
             throw new Exception('Invalid address');
         }
+        $notificationType = get_class($this);
+
+        return 'This is a '.$notificationType.' to '.$this->to.'.';
     }
 }
