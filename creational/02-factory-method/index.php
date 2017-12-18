@@ -1,15 +1,28 @@
 <?php
-require_once('Notifier.php');
-require_once('NotifierFactory.php');
-require_once('ElectronicNotifierFactory.php');
+require '../../includes/header.inc.php';
+?>
+<div class="container">
+
+    <h1>Factory method</h1>
+
+    <?php echo getCode('Notifier.php'); ?>
+    <?php echo getCode('NotifierFactory.php'); ?>
+    <?php echo getCode('Email.php'); ?>
+    <?php echo getCode('SMS.php'); ?>
+    <?php echo getCode('Post.php'); ?>
+
+    <h3>Codice Eseguito</h3>
+    <?php echo getCode('code.php'); ?>
+
+    <h3>Risultato</h3>
+
+    <pre>
+        <code><?php require 'code.php'; ?></code>
+    </pre>
 
 
-require_once('SMS.php');
-echo '<pre>';
-$mobile = ElectronicNotifierFactory::getNotifier('SMS', '3477196482');
-echo $mobile->sendNotification();
+</div>
 
-require_once('Email.php');
-$email = ElectronicNotifierFactory::getNotifier('Email', 'gianiaz@gmail.com');
-echo $email->sendNotification();
-echo '</pre>';
+<?php
+require '../../includes/footer.inc.php';
+?>
