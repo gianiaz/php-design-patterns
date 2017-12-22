@@ -14,3 +14,8 @@ function getCode($filename)
 
     return 'ERROR finding '.$filename;
 }
+
+function listDir($dir)
+{
+    return glob($dir.'/*', GLOB_ONLYDIR);
+}

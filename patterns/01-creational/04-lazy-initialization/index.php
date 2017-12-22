@@ -1,12 +1,12 @@
 <?php
-require '../../includes/header.inc.php';
+require '../../../includes/header.inc.php';
 ?>
 <div class="container">
 
     <h1>Abstract Factory Pattern</h1>
 
-    <?php echo getCode('Pizza.php'); ?>
-    <?php echo getCode('PizzaBuilder.php'); ?>
+    <?php echo getCode('Burger.php'); ?>
+    <?php echo getCode('BurgerLazyLoader.php'); ?>
 
     <h3>Codice Eseguito</h3>
     <?php echo getCode('code.php'); ?>
@@ -21,5 +21,5 @@ require '../../includes/header.inc.php';
 </div>
 
 <?php
-require '../../includes/footer.inc.php';
+require '../../../includes/footer.inc.php';
 ?>

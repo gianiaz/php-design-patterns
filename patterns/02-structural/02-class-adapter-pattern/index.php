@@ -1,5 +1,5 @@
 <?php
-require '../../includes/header.inc.php';
+require '../../../includes/header.inc.php';
 ?>
 <div class="container">
 
@@ -23,5 +23,5 @@ require '../../includes/header.inc.php';
 </div>
 
 <?php
-require '../../includes/footer.inc.php';
+require '../../../includes/footer.inc.php';
 ?>

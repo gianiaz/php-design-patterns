@@ -1,15 +1,14 @@
 <?php
-require '../../includes/header.inc.php';
+require '../../../includes/header.inc.php';
 ?>
 <div class="container">
 
-    <h1>Factory method</h1>
+    <h1>Simple Factory</h1>
 
     <?php echo getCode('Notifier.php'); ?>
     <?php echo getCode('NotifierFactory.php'); ?>
     <?php echo getCode('Email.php'); ?>
     <?php echo getCode('SMS.php'); ?>
-    <?php echo getCode('Post.php'); ?>
 
     <h3>Codice Eseguito</h3>
     <?php echo getCode('code.php'); ?>
@@ -24,5 +23,5 @@ require '../../includes/header.inc.php';
 </div>
 
 <?php
-require '../../includes/footer.inc.php';
+require '../../../includes/footer.inc.php';
 ?>
